@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Venetia.Construction", "R5T.Venetia.Construction\R5T.Venetia.Construction.csproj", "{51CA1159-E449-48EB-AB8C-354CDC15D6FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Venetia.Construction", "R5T.Venetia.Construction\R5T.Venetia.Construction.csproj", "{51CA1159-E449-48EB-AB8C-354CDC15D6FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Venetia", "R5T.Venetia\R5T.Venetia.csproj", "{70859849-4259-4744-B395-3869A3618C02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Venetia", "R5T.Venetia\R5T.Venetia.csproj", "{70859849-4259-4744-B395-3869A3618C02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{51CA1159-E449-48EB-AB8C-354CDC15D6FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -44,5 +41,11 @@ Global
 		{70859849-4259-4744-B395-3869A3618C02}.Release|x64.Build.0 = Release|Any CPU
 		{70859849-4259-4744-B395-3869A3618C02}.Release|x86.ActiveCfg = Release|Any CPU
 		{70859849-4259-4744-B395-3869A3618C02}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E37D2120-F4CF-4005-9C19-4BCE340A9729}
 	EndGlobalSection
 EndGlobal
