@@ -4,6 +4,8 @@ using Microsoft.Extensions.DependencyInjection;
 
 using Microsoft.EntityFrameworkCore;
 
+using R5T.Dacia.Extensions;
+
 
 namespace R5T.Venetia.Extensions
 {
@@ -18,8 +20,8 @@ namespace R5T.Venetia.Extensions
             where TDatabaseContextOptionsBuilderConfigurator: class, IDatabaseContextOptionsBuilderConfigurator
         {
             services
-                .AddSingleton<TConnectionStringProvider>()
-                .AddSingleton<TDatabaseContextOptionsBuilderConfigurator>()
+                .TryAddSingletonFluent<TConnectionStringProvider>()
+                .TryAddSingletonFluent<TDatabaseContextOptionsBuilderConfigurator>()
                 ;
 
             services.AddDatabaseContextUseServices<TDbContext, TConnectionStringProvider, TDatabaseContextOptionsBuilderConfigurator>();
