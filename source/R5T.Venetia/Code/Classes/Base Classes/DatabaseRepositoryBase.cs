@@ -23,5 +23,22 @@ namespace R5T.Venetia
         /// Basically just a wrapper for callings the <typeparamref name="TDbContext"/> constructor that takes the <see cref="DbContextOptions{TContext}"/>.
         /// </summary>
         public abstract TDbContext GetNewDbContext();
+
+        protected void ExecuteInContext(Action<TDbContext> action)
+        {
+            using (var dbContext = this.GetNewDbContext())
+            {
+                action(dbContext);
+            }
+        }
+
+        protected TOutput ExecuteInContext<TOutput>(Func<TDbContext, TOutput> function)
+        {
+            using (var dbContext = this.GetNewDbContext())
+            {
+                var output = function(dbContext);
+                return output;
+            }
+        }
     }
 }
