@@ -9,5 +9,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\R5T.Dacia\source\R5T.Dacia\R5T.Dacia.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Lincoln.Base\source\R5T.Lincoln.Base\R5T.Lincoln.Base.csproj" />
   </ItemGroup>
 </Project>
