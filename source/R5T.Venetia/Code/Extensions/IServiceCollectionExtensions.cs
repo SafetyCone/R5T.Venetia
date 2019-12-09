@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 
 using R5T.Dacia.Extensions;
+using R5T.Lincoln;
 
 
 namespace R5T.Venetia.Extensions

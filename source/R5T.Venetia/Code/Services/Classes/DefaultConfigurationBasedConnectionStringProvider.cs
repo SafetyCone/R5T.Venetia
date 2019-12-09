@@ -2,6 +2,8 @@
 
 using Microsoft.Extensions.Configuration;
 
+using R5T.Lincoln;
+
 
 namespace R5T.Venetia
 {
