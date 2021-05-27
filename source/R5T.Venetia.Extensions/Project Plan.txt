@@ -1,0 +1,4 @@
+R5T.Venetia.Extensions - Extensions and additional functionality for a Microsoft.EntityFrameworkCore package selector library.
+
+Goals
+
