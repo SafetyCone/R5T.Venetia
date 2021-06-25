@@ -10,14 +10,14 @@ namespace Microsoft.EntityFrameworkCore
             Func<DbContextOptions<TDbContext>, TDbContext> synchronousConstructor)
             where TDbContext : DbContext
         {
-            Task<TDbContext> Temp(DbContextOptions<TDbContext> dbContextOptions)
+            Task<TDbContext> AsynchronousConstructor(DbContextOptions<TDbContext> dbContextOptions)
             {
                 var dbContext = synchronousConstructor(dbContextOptions);
 
                 return Task.FromResult(dbContext);
             }
 
-            return Temp;
+            return AsynchronousConstructor;
         }
     }
 }
